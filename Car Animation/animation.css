@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+#background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./thunderstorm-g7988631ab_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+#land{
+    height: 100vh;
+    width: 800vw;
+    background-image: url(./trees.png);
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+    position: absolute;
+    top: -12vh;
+    animation: landMove linear 14s infinite;
+}
+
+#road{
+    height: 39vh;
+    width: 800vw;
+    background-image: url(./track.png);
+    background-repeat:repeat-x;
+    /* background-size: cover; */
+    position: absolute;
+    top: 70vh;
+    animation: roadMove linear 7s infinite;
+
+}
+#car{
+    height: 100px;
+    width: 350px;
+    background-image: url(./car_body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 64vh;
+    left: 27vw;
+    animation: carShake linear .9s infinite;
+    animation: carRun linear 6s infinite;
+}
+.wheel{
+position: relative;
+}
+#wheel1 img{
+    position: relative;
+    top: 35px;
+    left: 41px;
+    height: 72px;
+    width: 72px;
+    animation: wheelRotate linear .6s infinite;
+}
+#wheel2 img{
+    position: relative;
+    left: 215px;
+    bottom: 45px;
+    height: 75px;
+    width: 75px;
+    animation: wheelRotate linear .6s infinite;
+}
+
+@keyframes wheelRotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roadMove {
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes landMove {
+    100%{
+        transform: translateX(-80%);
+    }
+}
+
+/* @keyframes carShake {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+} */
+@keyframes carRun {
+    0%{
+        transform: translateX(50px);
+        transform: translateY(-30px);
+    }
+    25%{
+        transform: translateX(-50px);
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(50px);
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+        transform: translateY(30px);
+
+    }
+}
+
