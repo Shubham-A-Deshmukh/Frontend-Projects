@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calci.css">
+    
+</head>
+<body>
+    <div id="box">
+        <div id="view">
+            <input type="text" name="" id="inp" value="">
+        </div>
+        <div id="keys">
+            <div class="rows" id="row1">
+                <button onclick="getClear()" class="but">AC</button>
+                <button onclick="getDisplay('/')" class="but">/</button>
+                <button onclick="getDisplay('*')" class="but">*</button>
+                <button onclick="getDelete()" class="but">del</button>
+            </div>
+                <div class="rows" id="row2">
+                <button onclick="getDisplay('7')" class="but">7</button>
+                <button onclick="getDisplay('8')" class="but">8</button>
+                <button onclick="getDisplay('9')" class="but">9</button>
+                <button onclick="getDisplay('-')" class="but">-</button>
+            </div>
+                <div class="rows" id="row3">
+                <button onclick="getDisplay('4')" class="but">4</button>
+                <button onclick="getDisplay('5')" class="but">5</button>
+                <button onclick="getDisplay('6')" class="but">6</button>
+                <button onclick="getDisplay('+')" class="but">+</button>
+            </div>
+            <div class="rows" id="row4">
+                <button onclick="getDisplay('1')" class="but">1</button>
+                <button onclick="getDisplay('2')" class="but">2</button>
+                <button onclick="getDisplay('3')" class="but">3</button>
+                <button onclick="getEqualsto()" class="but">=</button>
+            </div>
+                <button onclick="getDisplay('.')" class="but">.</button>
+                <button onclick="getDisplay('0')" class="but">0</button>
+                <button onclick="getDisplay('%')" class="but">%</button>
+                <!-- <button></button> -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./calci.js"></script>
+</body>
+</html>
